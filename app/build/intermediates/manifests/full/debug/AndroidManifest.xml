@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.platega.angel.diarodeviaxe"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="23" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.platega.angel.diarodeviaxe.Presentacion"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.platega.angel.diarodeviaxe.Principal"
+            android:label="@string/title_activity_principal" >
+        </activity>
+        <activity
+            android:name="com.platega.angel.diarodeviaxe.AltaLugar"
+            android:label="@string/title_activity_alta_lugar" >
+        </activity>
+        <activity
+            android:name="com.platega.angel.diarodeviaxe.AltaRecordos"
+            android:label="@string/title_activity_alta_recordos" >
+        </activity>
+        <activity
+            android:name="com.platega.angel.diarodeviaxe.XestionMapa"
+            android:label="@string/title_activity_xestion_mapa" >
+        </activity>
+
+        <uses-library android:name="com.google.android.maps" />
+
+        <activity
+            android:name="com.platega.angel.diarodeviaxe.ListaLugares"
+            android:label="@string/title_activity_lista_lugares" >
+        </activity>
+        <activity
+            android:name="com.platega.angel.diarodeviaxe.PantallaPreferencias"
+            android:label="@string/title_activity_pantalla_preferencias" >
+        </activity>
+    </application>
+
+</manifest>

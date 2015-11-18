@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="string_presentacion_mensaxe_titulo">DIARIO DE VIAXE</string>
+    <string name="string_presentacion_mensaxe_textolugares">Os meus lugares favoritos</string>
+	<string name="string_presentacion_desc_imaxeavion">Imaxe dun avión</string>
+    <string name="string_presentacion_desc_imaxeterra">Imaxe da Terra</string>
+
+    <string name="string_presentacion_control_btnEntrar">Adiante</string>
+</resources>

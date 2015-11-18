@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_presentacion_LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/text_presentacion_titulo"
+        android:layout_weight="2"
+        style="@style/style_all_titulo_aplicacion"
+     />
+    <ImageView
+        android:id="@+id/image_principal_viajar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:contentDescription="@string/string_principal_desc_imaxeBici"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:src="@drawable/grafico_principal_viajar128"
+         />
+    
+    
+    <Button
+        android:id="@+id/button_principal_engadirLugar"
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/string_principal_control_btnEngadirLugar"
+        android:textSize="20sp"
+        android:onClick="eventoClick" 
+     />
+
+    <Button
+        android:id="@+id/button_principal_verLugares"
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/string_principal_control_btnVerLugares"
+        android:textSize="20sp"
+         android:onClick="eventoClick" 
+         />
+
+    <Button
+        android:id="@+id/button_principal_sair"
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/string_principal_control_btnSair"
+        android:textSize="20sp"
+         android:onClick="eventoClick" 
+         />
+
+</LinearLayout>

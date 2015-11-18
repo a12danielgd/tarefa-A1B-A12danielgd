@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <string name="string_altarecordos_control_btnGardarFoto">NOVA FOTO</string>
+        <string name="string_altarecordos_control_btnGardarAudio">NOVO AUDIO</string>
+        <string name="string_altarecordos_control_btnGardarGPS">NOVO GPS</string>
+        <string name="string_altarecordos_control_btnAltaLugar">ENGADIR LUGAR</string>
+        <string name="string_altarecordos_control_btnSair">VOLVER PRINCIPAL</string>
+        
+        <string name="string_altarecordos_dialog_btnPararGravar">Parar de gravar</string>
+        <string name="string_altarecordos_dialog_btnPararReproducir">Parar de reproducir</string>
+        
+        <string name="string_altarecordos_texto_listaGPS">Lista coordenadas GPS</string>
+        <string name="string_altarecordos_texto_listaFotos">Lista fotos sacadas</string>
+        <string name="string_altarecordos_texto_listaAudio">Lista audios grabados</string>
+        
+        <string name="string_altarecordos_texto_gravandoAudio">Gravando audio</string>
+        <string name="string_altarecordos_texto_reproducindoAudio">Reproducindo audio</string>
+        <string name="string_altarecordos_erro_gravarAudio">Erro na gravación do audio.</string>
+        <string name="string_altarecordos_erro_reproducirAudio">Erro na reprodución do audio.</string>
+        
+        <string name="string_altarecordos_menu_borrarRecordo">Eliminar recordo</string>
+        
+</resources>

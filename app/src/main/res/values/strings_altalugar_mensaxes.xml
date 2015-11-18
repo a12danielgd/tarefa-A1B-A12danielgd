@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <string name="string_altalugar_control_btnSair">VOLVER PRINCIPAL</string>
+        <string name="string_altalugar_control_btnAlta">ALTA LUGAR</string>
+        
+        <string name="string_altalugar_texto_NomeLugar">Nome do Lugar/Ruta</string>
+        <string name="string_altalugar_texto_Descripcion">Descripción</string>
+        <string name="string_altalugar_mensaxe_nomeObrigatorio">O nome do lugar é obrigatorio poñelo.</string>
+        <string name="string_altalugar_mensaxe_altaFeita">Alta do lugar dada correctamente.</string>
+        
+        <string name="string_altalugar_erro_crearCartafol">Por favor, modifique o nome do lugar e non utilice caracteres extraños.</string>
+        <string name="string_altalugar_erro_lugarExiste">Xa existe un lugar con ese nome.</string>
+        
+</resources>

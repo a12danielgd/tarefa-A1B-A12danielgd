@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_detalleFoto_linear"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/image_detallefoto_foto"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/string_detallefoto_desc_foto"
+        android:src="@drawable/ic_launcher" />
+
+    <ImageButton
+        android:id="@+id/imgBtn_detallefoto_volver"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/string_altarecordos_control_btnSair"
+        android:scaleType="fitCenter"
+        android:src="@drawable/grafico_volver128" />
+</LinearLayout><!-- From: file:/home/SANCLEMENTE/a12danielgd/AndroidStudioProjects/tarefa-A1B-A12danielgd/app/src/main/res/layout/layout_detallefoto.xml -->

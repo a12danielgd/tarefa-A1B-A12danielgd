@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_altalugar_LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/textV_presentacion_titulo"
+        style="@style/style_all_titulo_aplicacion"
+        android:layout_weight="2" />
+
+    <EditText
+        android:id="@+id/editT_altalugar_nome"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="@string/string_altalugar_texto_NomeLugar"
+        android:inputType="textNoSuggestions|textPersonName|textCapWords"
+        android:textSize="20sp" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/editT_altalugar_desciprcion"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:hint="@string/string_altalugar_texto_Descripcion"
+        android:inputType="textNoSuggestions|textMultiLine"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/layout_altalugar_botons"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/imgBtn_altalugar_novoLugar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/string_altalugar_control_btnAlta"
+            android:scaleType="fitCenter"
+            android:src="@drawable/grafico_altalugar128" />
+
+        <ImageButton
+            android:id="@+id/imgBtn_altalugar_volver"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/string_altalugar_control_btnSair"
+            android:scaleType="fitCenter"
+            android:src="@drawable/grafico_volver128" />
+    </LinearLayout>
+
+</LinearLayout>

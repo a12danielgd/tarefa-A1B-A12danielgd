@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/menu_altaLugar_borrarRecordo" android:title="@string/string_altarecordos_menu_borrarRecordo"></item>"
+
+</menu>
+<!-- From: file:/home/SANCLEMENTE/a12danielgd/AndroidStudioProjects/tarefa-A1B-A12danielgd/app/src/main/res/menu/menualtalugarborrarrecordo.xml -->

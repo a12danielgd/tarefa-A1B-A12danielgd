@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+     
+        <item
+           android:id="@+id/menu_principal_descargar"
+           android:showAsAction="ifRoom"
+		   android:icon="@drawable/grafico_menu_descargar"          
+           android:title="@string/string_principal_menu_descargar"/>
+     
+        <item
+           android:id="@+id/menu_principal_preferencias"
+           android:showAsAction="ifRoom"
+		   android:icon="@drawable/grafico_menu_settings"          
+           android:title="@string/string_principal_menu_preferencias"/>
+        
+</menu>
+<!-- From: file:/home/SANCLEMENTE/a12danielgd/AndroidStudioProjects/tarefa-A1B-A12danielgd/app/src/main/res/menu/menuprincipal.xml -->

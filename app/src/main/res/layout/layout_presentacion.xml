@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_presentacion_LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/text_presentacion_titulo"
+        android:layout_weight="2"
+        style="@style/style_all_titulo_aplicacion"
+     />
+
+    <TextView
+        android:id="@+id/text_presentacion_textolugares"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:textColor="@color/verde"
+        android:text="@string/string_presentacion_mensaxe_textolugares"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/image_presentacion_terra"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:contentDescription="@string/string_presentacion_desc_imaxeterra"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:src="@drawable/grafico_presentacion_earth128"
+         />
+
+    <ImageView
+        android:id="@+id/image_presentacion_avion"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_gravity="left"
+        android:contentDescription="@string/string_presentacion_desc_imaxeavion"
+        android:src="@drawable/grafico_presentacion_airplane128"
+        />
+
+    <Button
+        android:id="@+id/button_presentacion_aceptar"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:width="80sp"
+        android:height="30sp"
+        android:textColor="@color/azul_escuro"
+        android:text="@string/string_presentacion_control_btnEntrar"
+        android:textSize="15sp" />
+
+</LinearLayout>

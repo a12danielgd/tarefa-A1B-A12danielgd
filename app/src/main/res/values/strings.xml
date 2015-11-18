@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Diaro de Viaxe</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_principal">Principal</string>
+    <string name="title_activity_alta_lugar">Alta Lugar</string>
+    <string name="title_activity_alta_recordos">Alta de Recordos</string>
+    <string name="title_activity_xestion_mapa">Google Maps</string>
+    <string name="title_activity_lista_lugares">Lista de Lugares</string>
+    <string name="title_activity_pantalla_preferencias">Pantalla de Preferencias</string>
+
+</resources>

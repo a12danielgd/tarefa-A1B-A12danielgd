@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <string name="string_principal_control_btnEngadirLugar">ENGADIR LUGAR</string>
+        <string name="string_principal_control_btnMapaGoogle">MAPA GOOGLE</string>
+        <string name="string_principal_control_btnVerLugares">VER LUGARES</string>
+        <string name="string_principal_control_btnSair">SAIR APLICACION</string>
+        
+    <string name="string_principal_desc_imaxeBici">Imaxe dunha bicicleta</string>
+        
+    <string name="string_principal_mensaxe_nosdexterna">Non tes SD. Non se pode utilizar esta aplicación.</string>
+    <string name="string_principal_erro_copiaBD">Erro na copia da Base de datos.</string>
+    <string name="string_principal_erro_googleplayservicesnoninstalados">Para que esta aplicación funcione é necesario instalar o Google Play Services.</string>
+    
+    <string name="string_principal_menu_descargar">Descargar</string>
+    <string name="string_principal_menu_preferencias">Preferencias</string>
+    
+
+</resources>

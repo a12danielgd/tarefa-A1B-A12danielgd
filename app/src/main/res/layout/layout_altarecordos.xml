@@ -1,0 +1,121 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_altarecordos_LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+    
+    <TextView
+        android:id="@+id/textV_presentacion_titulo"
+        style="@style/style_all_titulo_aplicacion"
+        android:layout_weight="2" />
+
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:text="@string/string_altarecordos_texto_listaAudio" />
+
+            <ListView
+                android:id="@+id/listview_altarecordos_audios"
+                android:layout_width="match_parent"
+                android:scrollbars="vertical"
+                android:scrollbarStyle="insideOverlay"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+            />
+			
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:text="@string/string_altarecordos_texto_listaFotos" />
+
+            <HorizontalScrollView
+                android:id="@+id/hsview_altarecordos_paihorizontalview"
+                android:layout_width="match_parent"
+                android:scrollbars="horizontal"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:background="@color/verde"
+             >
+                <LinearLayout
+                    android:id="@+id/hsview_altarecordos_fillohorizontalview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" />
+            </HorizontalScrollView>
+                
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:text="@string/string_altarecordos_texto_listaGPS" />
+
+            <ListView
+                android:id="@+id/listview_altarecordos_gps"
+                android:layout_width="match_parent"
+                android:scrollbars="vertical"
+                android:scrollbarStyle="insideOverlay"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+            />
+
+    <LinearLayout
+        android:id="@+id/layout_altarecordos_botons"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <ImageButton
+            android:id="@+id/imgBtn_altarecordos_novoaudio"
+            android:layout_height="match_parent"
+	        android:layout_width="0dp"
+    	    android:layout_weight="1"
+    	    android:scaleType="fitCenter"
+    	    android:contentDescription="@string/string_altarecordos_control_btnGardarAudio"
+            android:src="@drawable/grafico_audio128" />
+
+        <ImageButton
+            android:id="@+id/imgBtn_altarecordos_novafoto"
+            android:layout_height="match_parent"
+	        android:layout_width="0dp"
+    	    android:layout_weight="1"
+    	    android:scaleType="fitCenter"
+    	    android:contentDescription="@string/string_altarecordos_control_btnGardarFoto"
+            android:src="@drawable/grafico_foto128" />
+
+        <ImageButton
+            android:id="@+id/imgBtn_altarecordos_novogps"
+            android:layout_height="match_parent"
+	        android:layout_width="0dp"
+    	    android:layout_weight="1"
+    	    android:scaleType="fitCenter"
+    	    android:contentDescription="@string/string_altarecordos_control_btnGardarGPS"
+            android:src="@drawable/grafico_gps128" />
+
+        <ImageButton
+            android:id="@+id/imgBtn_altarecordos_volver"
+            android:layout_height="match_parent"
+	        android:layout_width="0dp"
+    	    android:layout_weight="1"
+    	    android:scaleType="fitCenter"
+    	    android:contentDescription="@string/string_altarecordos_control_btnSair"
+            android:src="@drawable/grafico_volver128"
+             />
+        </LinearLayout>
+    
+</LinearLayout>

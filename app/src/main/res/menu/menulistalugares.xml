@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/menu_listalugares_detalleLugar" android:title="@string/string_listalugares_menu_detalleLugar"></item>"
+    <item android:id="@+id/menu_listalugares_mapaLugar" android:title="@string/string_listalugares_menu_mapaLugar"></item>"
+    <item android:id="@+id/menu_listalugares_borrarLugar" android:title="@string/string_listalugares_menu_borrarLugar"></item>"
+
+</menu>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+   android:shareInterpolator="true"
+    >
+   <alpha
+      android:fromAlpha="0.0"
+      android:toAlpha="1.0"
+      android:duration="2000"
+  />
+   
+</set>
+<!-- From: file:/home/SANCLEMENTE/a12danielgd/AndroidStudioProjects/tarefa-A1B-A12danielgd/app/src/main/res/anim/anim_presentacion_fundido.xml -->

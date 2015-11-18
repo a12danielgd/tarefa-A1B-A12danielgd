@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <string name="string_listalugares_mensaxe_lugarBorrado">LUGAR DADO DE BAIXA</string>
+        <string name="string_listalugares_mensaxe_senLugares">Non hai lugares introducidos</string>
+        
+        <string name="string_listalugares_menu_borrarLugar">BORRAR LUGAR</string>
+        <string name="string_listalugares_menu_detalleLugar">DETALLE LUGAR</string>
+        <string name="string_listalugares_menu_mapaLugar">MAPA DO LUGAR</string>
+        
+</resources>

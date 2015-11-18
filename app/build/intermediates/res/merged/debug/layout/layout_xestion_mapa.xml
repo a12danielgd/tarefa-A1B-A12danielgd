@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    tools:context=".MainActivity" >
+
+    <!--POÑER <Fragment .......class="com.google.android.gms.maps.MapFragment" se é igual ou superior á API 12 --> 
+        
+     <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.google.android.gms.maps.SupportMapFragment"
+    />
+
+</RelativeLayout> 
+
+<!-- <fragment xmlns:android="http://schemas.android.com/apk/res/android" -->
+<!--     android:id="@+id/map" -->
+<!--     android:layout_width="match_parent" -->
+<!--     android:layout_height="match_parent" -->
+<!--     class="com.google.android.gms.maps.SupportMapFragment" /> --><!-- From: file:/home/SANCLEMENTE/a12danielgd/AndroidStudioProjects/tarefa-A1B-A12danielgd/app/src/main/res/layout/layout_xestion_mapa.xml -->

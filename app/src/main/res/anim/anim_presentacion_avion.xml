@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+	android:shareInterpolator="false"
+	android:startOffset="1000"
+    >
+<!-- E IMPORTANTE A ORDE POLA ROTACIÓN. PRIMEIRO TEMOS QUE ROTAR -->
+     <rotate
+         android:duration="2000"
+         android:fillAfter="true"
+         android:fromDegrees="0"
+         android:pivotX="50%"
+         android:pivotY="50%"
+         android:startOffset="12000"
+         android:toDegrees="180" />
+     <rotate
+         android:duration="2000"
+         android:fillAfter="true"
+         android:fromDegrees="0"
+         android:pivotX="50%"
+         android:pivotY="50%"
+         android:startOffset="4000"
+         android:toDegrees="180" />
+     <translate
+         android:duration="4000"
+         android:fillAfter="true"
+         android:fromXDelta="0%p"
+         android:startOffset="0"
+         android:toXDelta="90%p" />
+
+
+     <translate
+         android:duration="6000"
+         android:fillAfter="true"
+         android:fromXDelta="0%p"
+         android:startOffset="6000"
+         android:toXDelta="-90%p" />
+
+</set>
