@@ -50,7 +50,7 @@ public class AltaLugar extends Activity {
 				
 
 				// Creamos os cartafois onde gardar a imaxes e audios => Enviamos á bd.
-
+				File sdCard= Environment.getExternalStorageDirectory();
 				
 				// DAR DE ALTA NA BD
 				// DE AQUI OBTERIAMOS O NUMERO (ID) CLAVE PRIMARIA DA TABOA
