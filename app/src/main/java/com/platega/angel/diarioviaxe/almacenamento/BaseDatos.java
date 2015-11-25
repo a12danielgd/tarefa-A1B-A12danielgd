@@ -29,13 +29,14 @@ public class BaseDatos extends SQLiteOpenHelper {
 
     }
 
-    public long engadirAula(Lugares lugar){
+    public Lugares engadirAula(String nome,String descripcion){
         ContentValues valores = new ContentValues();
-        valores.put("nome", lugar.getNome());
-        valores.put("descripcion", lugar.getDescripcion());
+        valores.put("nome", nome);
+        valores.put("descripcion", descripcion);
         long id = bd.insert("LUGARES",null,valores);
+        Lugares lugar=new Lugares(id,nome,descripcion);
 
-        return id;
+        return lugar;
 
     }
 

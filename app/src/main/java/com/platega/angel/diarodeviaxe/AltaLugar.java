@@ -8,10 +8,12 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Environment;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 import com.platega.angel.diariodeviaxe.utiles.Constantes;
 import com.platega.angel.diariodeviaxe.utiles.Utiles;
@@ -20,7 +22,7 @@ import com.platega.angel.diarioviaxe.almacenamento.Lugares;
 
 public class AltaLugar extends Activity {
 
-	
+	BaseDatos baseDatos=null;
 	
 	private void xestionarEventos(){
 		
@@ -51,22 +53,30 @@ public class AltaLugar extends Activity {
 
 				// Creamos os cartafois onde gardar a imaxes e audios => Enviamos á bd.
 				File sdCard= Environment.getExternalStorageDirectory();
-				
+				File rutaLugar=new File(sdCard.getAbsolutePath()+"/"+nome.getText().toString());
+				File rutaAudio=new File(rutaLugar.getAbsolutePath()+Constantes.CARTAFOL_GARDAR_DATOS_AUDIO);
+				File rutaImaxes=new File(rutaLugar.getAbsolutePath()+Constantes.CARTAFOL_GARDAR_DATOS_IMAXES);
+
 				// DAR DE ALTA NA BD
-				// DE AQUI OBTERIAMOS O NUMERO (ID) CLAVE PRIMARIA DA TABOA
-				// ACTUALIZAMOS A BASE DE DATOS PARA GARDAR NA TABOA LUGARES A RUTA O RAIZ DO SITIO E ÓS RECURSOS (IMAXES/FOTOS) DA SD.
-				
-				
-				// Lanzamos a activity de AltaRecordos coa nova Id.
-				Intent intento = new Intent(AltaLugar.this,AltaRecordos.class);
+				if(!nome.getText().toString().equals("") && !descrip.getText().toString().equals("")) {
+					// DE AQUI OBTERIAMOS O NUMERO (ID) CLAVE PRIMARIA DA TABOA
+					Lugares lugar = baseDatos.engadirAula(nome.getText().toString(), descrip.getText().toString());
+					Log.i("ALTALUGAR", "" + lugar.get_id());
+					// ACTUALIZAMOS A BASE DE DATOS PARA GARDAR NA TABOA LUGARES A RUTA O RAIZ DO SITIO E ÓS RECURSOS (IMAXES/FOTOS) DA SD.
+
+
+					// Lanzamos a activity de AltaRecordos coa nova Id.
+					Intent intento = new Intent(AltaLugar.this, AltaRecordos.class);
 //				long id = lugar.getId();
 //
 //				intento.putExtra(Constantes.ID_LUGAR, id);
 //				intento.putExtra(Constantes.NOME_LUGAR, lugar.getNome());
-				
-				startActivity(intento);
-				
-				finish();
+
+					startActivity(intento);
+				}else{
+					Toast.makeText(getApplicationContext(),"Non hai datos que engadir",Toast.LENGTH_SHORT).show();
+				}
+
 			}
 		});
 		
@@ -82,19 +92,26 @@ public class AltaLugar extends Activity {
 		return true;
 		
 	}
-	
+
 	@Override
-	protected void onStart(){
+	public void onStart(){
 		super.onStart();
-		
+
+		if (baseDatos==null) {   // Abrimos a base de datos para escritura
+			baseDatos = new BaseDatos(this,1);
+			baseDatos.bd = baseDatos.getWritableDatabase();
+		}
 	}
-	
 
-
-	@Override 
+	@Override
 	public void onStop(){
 		super.onStop();
-		
+
+		if (baseDatos!=null){    // Pechamos a base de datos.
+			baseDatos.close();
+			baseDatos=null;
+		}
+
 	}
 	
 	
